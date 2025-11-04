@@ -11,14 +11,29 @@ console.log('x > y : ' + (x > y));     // greater than
 console.log('x < y : ' + (x < y));     // less than
 console.log('x >= y : ' + (x >= y));    // greater than or equal to
 console.log('x <= y : ' + (x <= y));    // less than or equal to
+
+//Assignment operatorsdemo
+let a = 50;
+console.log('Initial value of a: ' + a);
+a += 10; 
+console.log('After a += 10: ' + a);
+a -= 5; 
+console.log('After a -= 5: ' + a);  
+a *= 7;
+console.log('After a *= 7: ' + a);
+a /= 3; 
+console.log('After a /= 3: ' + a);  
+a %= 9; 
+console.log('After a %= 9: ' + a);
+
 // logical operatorsdemo
-let a = true;
-let b = false;
-console.log('a = ' + a + ', b = ' + b);         
-console.log('a && b : ' + (a && b));  // logical AND
-console.log('a || b : ' + (a || b));  // logical OR
-console.log('!a : ' + (!a));          // logical NOT
-console.log('!b : ' + (!b));          // logical NOT
+let m = true;
+let n = false;
+console.log('m = ' + m + ', n = ' + n);         
+console.log('m && n : ' + (m && n));  // logical AND
+console.log('m || n : ' + (m || n));  // logical OR
+console.log('!m : ' + (!m));          // logical NOT
+console.log('!n : ' + (!n));          // logical NOT
 
 x = 66;
 y = "85";
