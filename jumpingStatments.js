@@ -39,3 +39,32 @@ while(k<=20){
     console.log(k);
     k++
 }
+
+
+// return statement
+function add(a, b){
+    return a + b;  //function will return the sum of a and b
+}
+let sum = add(5, 10);
+console.log(`Sum is: ${sum}`);
+
+//labeled statement
+outerLoop:
+for(let m=1; m<=5; m++){    
+    for(let n=1; n<=5; n++){
+        if(m==3 && n==3){
+            break outerLoop;  //breaks out of the outer loop when m=3 and n=3
+        }   
+        console.log(`m: ${m}, n: ${n}`);
+    }
+}
+
+innerLoop:
+for(let p=1; p<=5; p++){    
+    for(let q=1; q<=5; q++){
+        if(p==3 && q==3){
+            continue innerLoop;  //continues the outer loop when p=3 and q=3
+        }   
+        console.log(`p: ${p}, q: ${q}`);
+    }
+}   
