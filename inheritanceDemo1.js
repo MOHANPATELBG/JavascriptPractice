@@ -28,4 +28,10 @@ class Dog extends Animal {
     fetch() {
         return `${this.name} is fetching the ball.`;
     }
-}
+}   
+// Creating an instance of the parent class
+const genericAnimal = new Animal('Generic Animal');
+console.log(genericAnimal.makeSound()); // Output: Generic Animal makes a sound.
+// Creating an instance of the child class
+const myDog = new Dog('Buddy', 'Golden Retriever');
+console.log(myDog.makeSound());
