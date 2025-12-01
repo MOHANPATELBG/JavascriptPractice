@@ -1,6 +1,8 @@
 // Inheritance Demo in JavaScript
 // Inheritance allows a class (child class) to inherit properties and methods from another class (parent class).
 // This promotes code reusability and establishes a hierarchical relationship between classes.
+//different types of inheritance: single inheritance, multi-level inheritance, hierarchical inheritance, and hybrid inheritance.
+
 // Defining a parent class
 class Animal {
     // Constructor to initialize the animal's name
