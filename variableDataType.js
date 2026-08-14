@@ -1,5 +1,4 @@
 var a;
-
 a=3131991;
 console.log("The value of a is: "+a);  
 console.log('\n');

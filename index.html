@@ -1,9 +1,93 @@
+<!DOCTYPE html>
 <html>
-    <head></head>
-    <body>
-        <h1>Test to demonstrate variable Data Types</h1>
-        <script src="variableDataType.js"></script>  
-            
-        </script>
-    </body>
+<head>
+  <title>Welcome to Playwright</title>
+</head>
+<body>
+  <div class="container">
+    <p>
+        <h1>Welcome to Playwright</h1>
+    </p>
+    <p>
+      User name: <input type="text" id="user" />
+      Password: <input type="password" id="pwd" />
+      <button id="login">Login</button>
+      <input type="checkbox" id="report" /> Report
+    </p>
+
+    <table border="1">
+        <tr>
+            <th>
+                <input type="radio" name="gender" id="male" />
+                <label for="male">Male</label>
+            </th>
+            <th>
+                <input type="radio" name="gender" id="female" />
+                <label for="female">Female</label>
+            </th> 
+        </tr>  
+    </table>
+     <p>
+
+     </p>
+
+    <table border="1">
+        <tr>
+            <th>
+                <a href="https://google.com" id="link">Google</a>
+            </th> 
+        </tr>  
+    </table>
+    <p>
+
+    </p>
+    <table border="1">
+        <tr>
+            <th>
+                <img src="image.png"  alt="Image" width="200"/>
+            </th> 
+            <th>
+                <a href="https://playwright.dev">
+                    <img src="image.png" alt="Image with link" width="200"/>
+                </a>
+            </th> 
+        </tr>  
+    </table>
+    <p>
+
+    </p>
+    <table border="1">
+        <tr>
+            <th>
+                <select type="city" id="city">
+                    <option value="Hospete">Hospete</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mysore">Mysore</option>
+                    <option value="Kotturu">Kotturu</option>
+                </select>
+            </th> 
+            <th>
+                <select id="Cities" multiple="true">
+                    <option value="one">Hospete</option>
+                    <option value="two">Mysore</option>
+                    <option value="three">Kotturu</option>
+                    <option value="four">Bangalore</option>
+                </select>
+            </th> 
+        </tr>  
+    </table>
+    <p>
+
+    </p>
+    <table border="1">
+        <tr>
+            <td>
+	            <textarea id="txtArea">Text Area</textarea>
+            </td>
+            <td>
+	            <input type="file" id="browse"/>
+            </td>
+        </tr>
+    </table>
+
 </html>
