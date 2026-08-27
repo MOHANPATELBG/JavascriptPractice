@@ -54,3 +54,11 @@ console.log(d);
 e = d--;  //here the value of d assigned before decrement so the value of e will be the value before decrement
 console.log(d);
 console.log(e);
+
+let i = 10;
+let j;
+j=i;
+
+j = i++ + j;
+console.log('Value of i: ' + i);
+console.log('Value of j: ' + j);

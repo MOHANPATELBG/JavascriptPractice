@@ -1,5 +1,8 @@
 // String methods examples
 const str = "Hello, World!";
+let a = new String("Hello, World!");
+console.log(a.charAt(0)); // "H"
+console.log(str.charCodeAt(0)); // 72
 console.log(str.toUpperCase()); // "HELLO, WORLD!"
 console.log(str.toLowerCase()); // "hello, world!"
 console.log(str.indexOf("World")); // 7
@@ -16,7 +19,7 @@ console.log(str.concat(" Welcome to string methods.")); // "Hello, World! Welcom
 console.log('Length of the string:', str.length); // 13 
 console.log('Character code at index 1:', str.charCodeAt(1)); // 101
 console.log('Substring from index 7 to 12:', str.substring(7, 12)); // "World"  
-console.log('Last index of "o":', str.lastIndexOf("o")); // 8   
+console.log('Last index of "o":', str.lastIndexOf("o")); // 8   last occurence of "o" is at index 8
 console.log('Split string into array of characters:', str.split('')); // Array of characters    
 console.log('Pad start to length 20:', str.padStart(20, '*')); // "*******Hello, World!"
 console.log('Pad end to length 20:', str.padEnd(20, '*')); // "Hello, World!*******"    
@@ -44,3 +47,5 @@ for (const char of str) {
     console.log(char);
 }
 console.log('-----------------------------------');
+
+console.log(str.indexOf("Cricket")); // -1 since the substring is not found index will be displayed as -1

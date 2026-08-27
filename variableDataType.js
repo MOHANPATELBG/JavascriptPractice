@@ -42,4 +42,8 @@ a=function(){
 console.log("The value of a is: "+a());
 console.log("The data type of a is: "+(typeof a));
 
+a=99.5;
+console.log("The value of a is: "+a);
+console.log("The data type of a is: "+(typeof a));  
+
 
