@@ -39,7 +39,7 @@ console.log('Fruits array',fruits, typeof fruits);          // ['banana', 'cherr
 
 //demonstarting join method
 let fruitsJoined = fruits.join(' - ');
-console.log('Fruits after join: ',fruitsJoined);
+console.log('Fruits after join: ',fruitsJoined); //'banana - cherry - date - elderberry - fig'
 
 // demonstrating splice method
 // Remove 1 element at index 2 and add 'coconut' and 'dragonfruit'
@@ -65,3 +65,9 @@ console.log('After SORT:', allFruits); // Sorted array
 allFruits.reverse();
 console.log('After REVERSE:', allFruits); // Reversed array
 console.log('Final Fruits Array:', fruits);
+
+// Splice method
+console.log('Before SPLICE:', fruits); // 
+fruits.splice(2, 1, 'coconut1', 'dragonfruit1');
+
+console.log('After SPLICE:', fruits); // ['banana', 'cherry', 'coconut1', 'dragonfruit1', 'elderberry', 'fig']
