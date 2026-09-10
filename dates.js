@@ -5,6 +5,25 @@ console.log("Current time is:", today.toTimeString());
 console.log("Year:", today.getFullYear());
 console.log("Month (0-11):", today.getMonth()+1); 
 console.log("Date:", today.getDate());
+console.log("Day of the week (0-6):", today.getDay()+1); //0-6 [0- sunday]
+console.log("Hours:", today.getHours()+1); // hours in 24-hour format 0-23
+console.log("Minutes:", today.getMinutes()); // 0 -59
+console.log("Seconds:", today.getSeconds()); // 0 -59
+console.log("Milliseconds:", today.getMilliseconds()); // getMilliseconds returns milliseconds 0 -999
+console.log("Time", today.getTime()); // milliseconds since January 1, 1970
+
+// Print month like 09
+const dd = String(today.getDate()).padStart(2, '0'); // Adding 1 to match human-readable format 1-31
+const mm = String(today.getMonth() + 1).padStart(2, '0'); // Adding 1 to match human-readable format 0-11
+const yyyy = today.getFullYear();
+const hh = String(today.getHours()).padStart(2, '0');
+const min = String(today.getMinutes()).padStart(2, '0');
+const sec = String(today.getSeconds()).padStart(2, '0');
+const ml = String(today.getMilliseconds()).padStart(3, '0');
+
+const formattedDate = `${yyyy}-${mm}-${dd} ${hh}:${min}:${sec}.${ml}`;
+console.log("Formatted date and time:", formattedDate); // YYYY-MM-DD HH:MM:SS.MS
+
 
 const specificDate = new Date('2022-12-25T10:30:00');
 console.log("Specific date is:", specificDate.toDateString());

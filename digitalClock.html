@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Digital Clock</title>
+</head>
+<body>
+    <h1 align="center">Digital Clock</h1>
+    <h2 id="clock" align="center"></h2>
+    <h2 id="Digitalclock" align="center"></h2>
+
+    <script>
+        function myClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+
+            setTimeout(myClock, 1000); // Update every second
+        }
+
+        //setInterval(myClock, 1000);
+        myClock(); // Initial call to display clock immediately
+    </script>
+    
+</body>
+</html>

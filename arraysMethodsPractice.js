@@ -63,7 +63,7 @@ console.log('After SORT:', allFruits); // Sorted array
 
 // demonstrating reverse method
 allFruits.reverse();
-console.log('After REVERSE:', allFruits); // Reversed array
+console.log('After REVERSE:', allFruits); // ['honeydew', 'grape', 'fig', 'elderberry', 'dragonfruit', 'coconut', 'cherry', 'banana']
 console.log('Final Fruits Array:', fruits);
 
 // Splice method
@@ -71,3 +71,20 @@ console.log('Before SPLICE:', fruits); //
 fruits.splice(2, 1, 'coconut1', 'dragonfruit1');
 
 console.log('After SPLICE:', fruits); // ['banana', 'cherry', 'coconut1', 'dragonfruit1', 'elderberry', 'fig']
+
+let alphabet = ['a', 'b', 'c', 'd', 'e'];
+
+// Delete 
+console.log('Before delete:', alphabet); // ['a', 'b', 'c', 'd', 'e']
+console.log('Deleting element at index 2');
+delete alphabet[2];
+console.log('After delete:', alphabet); // ['a', 'b', undefined, 'd', 'e']
+
+let numbers = [1, 2, 3, 4, 5];
+
+// concat method
+console.log('Concat method demonstration:', alphabet.concat(numbers)); // ['a', 'b', undefined, 'd', 'e', 1, 2, 3, 4, 5]
+
+//sort method
+console.log('Sort method demonstration:', numbers.sort((a, b) => b - a)); // [5, 4, 3, 2, 1]
+console.log('Sort method demonstration:', fruits.sort()); // ['banana', 'cherry', 'coconut1', 'dragonfruit1', 'elderberry', 'fig']

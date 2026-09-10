@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Digital Clock</title>
+</head>
+<body>
+    <h1 align="center">Digital Clock</h1>
+    <h2 id="Digitalclock" align="center"></h2>
+
+    <script>
+        function myClock() {
+            const now = new Date();
+            let hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            // 12 hours format
+            // const hours12 = String(now.getHours() % 12 || 12).padStart(2, '0');
+            // const ampm = now.getHours() >= 12 ? 'PM' : 'AM';
+            // document.getElementById('Digitalclock').textContent = `${hours12}:${minutes}:${seconds} ${ampm}`;
+            let session = "AM";
+            if(Number(hours) >= 12 ) {
+                hours = String(Number(hours) - 12).padStart(2, '0');
+                session = "PM";
+            }
+            if(hours === "00") {
+                hours = "12";
+            }
+            let time = hours + ":" + minutes + ":" + seconds + " " + session;
+            document.getElementById('Digitalclock').textContent = time;
+
+            //setTimeout(myClock, 1000); // Update every second
+        }
+
+        setInterval(myClock, 1000);
+        myClock(); // Initial call to display clock immediately
+    </script>
+    
+</body>
+</html>
