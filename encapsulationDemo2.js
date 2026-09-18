@@ -3,6 +3,7 @@
 class Person {
     // Private property
     #name;  
+    
     // Constructor to initialize the private property
     constructor(name) {
         this.#name = name;

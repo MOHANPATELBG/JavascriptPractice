@@ -1,4 +1,4 @@
-// Method Inheritance in JavaScript
+// Method Inheritance or Method Overriding in JavaScript
 // Method inheritance allows a class (child class) to inherit methods from another class (parent class).
 // This promotes code reusability and establishes a hierarchical relationship between classes.
 // Defining a parent class

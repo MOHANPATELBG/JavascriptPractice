@@ -1,4 +1,4 @@
-//Multi-Inheritance: In object-oriented programming, multiple inheritance is a feature that allows a class to inherit characteristics and behaviors (properties and methods) from more than one parent class.
+//Multiple-Inheritance: In object-oriented programming, multiple inheritance is a feature that allows a class to inherit characteristics and behaviors (properties and methods) from more than one parent class.
 //JavaScript does not support multiple inheritance directly through classes, but it can be achieved using mixins or by combining prototypes.
 // Example of Multiple Inheritance using Mixins in JavaScript
 // Mixin function to copy properties and methods from source to target
@@ -24,7 +24,7 @@ class Duck {
     }
 }
 // Applying mixins to Duck class
-Object.assign(Duck.prototype, CanFly, CanSwim);
+mixin(Duck.prototype, CanFly, CanSwim);
 // Creating an instance of the Duck class
 let daffy = new Duck('Daffy Duck');
 // Using methods from both parent classes
